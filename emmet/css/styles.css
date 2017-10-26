@@ -1,0 +1,49 @@
+html {
+  background-color: -webkit-linear-gradient(#0569FF, #B8CCFF);
+  background-color: -o-linear-gradient(#0569FF, #B8CCFF);
+  background-color: linear-gradient(#0569FF, #B8CCFF);
+  height: 100vh;
+}
+
+body {
+font: 16px Arial;
+background-color: #E6E6E6;
+}
+
+h2{
+background-color: #BBBBBB;
+color:#19980F;
+text-align: center;
+font-size: 1.4em;
+font-weight: normal;
+margin: 0px auto;
+padding: 10px;
+width: 650px;
+}
+
+section{
+	background-color: #fff;
+	margin: 0px auto;
+	padding: 20px;
+	width:600px;
+}
+
+section div {
+	border: 1px solid #031BD2;
+	padding: 10px;
+
+}
+
+section div.ejemplo{
+	background-color: #480B;
+	text-align:center;
+	transition: all 0.5s;
+
+}
+
+section div.ejemplo:hover{
+	background-color: #131994;
+	cursor: pointer; 
+
+
+}

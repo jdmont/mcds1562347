@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Taller emmet</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>	
+
+	<!-- -----------------------------    Anidar elementos   ---------------------     -->
+	<h2>Anidar elementos ( > )</h2>
+	<section>
+		<div class="ejemplo">				
+
+			ul>li>a>img
+		</div>
+
+		<div class="resultado">
+			Còdigo:
+<xmp>
+<ul>
+<li><a href="">Elemento<img src="img/logo.png" alt=""></a></li>
+</ul>
+</xmp>
+			Resultado:
+			<ul>
+				<li><a href="">Elemento<img src="img/logo.png" alt=""></a></li>
+			</ul>
+		</div>
+	</section>
+	<!-- -----------------------------    Elementos hermanos   ---------------------     -->
+
+	<h2>Elementos hermanos ( + )</h2>
+	<section>
+		<div class="ejemplo">				
+
+			Ejemplo: 
+			header>div+nav
+		</div>
+
+		<div class="resultado">
+			<xmp>
+				<header>
+					<div></div>
+					<nav></nav>
+				</header>
+			</xmp>
+
+		</div>
+	</section>
+	<!-------------------------------------->
+	
+	<script src="js/jquery-3.2.1.min.js"> </script>
+	<script>
+		$(document).ready(function() {
+			$('.resultado').hide();
+			$('section').on('click', '.ejemplo', function(event) {
+				event.preventDefault();
+				/* Act on the event */
+				$(this).next('.resultado').slideToggle('slow')
+			});
+		});
+	</script>
+
+</body>
+</html>
